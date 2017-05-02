@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\Workspaces\James\FIrmware_46_EWARM\Candy_Bugger_46_IAR\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.general.xcl" --backend -f "E:\Workspaces\James\FIrmware_46_EWARM\Candy_Bugger_46_IAR\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\Workspaces\James\Firmware_46_SW4STM\Candy_Bugger_46\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.general.xcl" --backend -f "E:\Workspaces\James\Firmware_46_SW4STM\Candy_Bugger_46\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\Workspaces\James\FIrmware_46_EWARM\Candy_Bugger_46_IAR\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.general.xcl" --debug_file=$debugfile --backend -f "E:\Workspaces\James\FIrmware_46_EWARM\Candy_Bugger_46_IAR\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\Workspaces\James\Firmware_46_SW4STM\Candy_Bugger_46\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.general.xcl" --debug_file=$debugfile --backend -f "E:\Workspaces\James\Firmware_46_SW4STM\Candy_Bugger_46\EWARM\settings\Candy_Bugger_46_IAR.Candy_Bugger_46_IAR.driver.xcl" 
 }
