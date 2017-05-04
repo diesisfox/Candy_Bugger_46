@@ -131,7 +131,7 @@ uint8_t fromHex(uint8_t i){//0xff = invalid char
 	return 0xff;
 }
 
-uint8_t intToDec(uint input, uint8_t *str){ //returns length. Only does positives.
+uint8_t intToDec(unsigned int input, uint8_t *str){ //returns length. Only does positives.
 	uint8_t length = 0;
 	uint8_t output[10];
 	while(input/10){
@@ -198,7 +198,7 @@ void logError(LogErrorCode_t e, LogErrorLevel_t l){
 	xSemaphoreGive(UartTxMtxHandle);
 }
 
-static void waitTilAvail(uint length){ //blocks current taks (runs others) until true
+static void waitTilAvail(unsigned int length){ //blocks current taks (runs others) until true
 	while(Serial2_available() < length){
 		osDelay(1);
 	}
